@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a-nelas projects</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    main {
+      max-width: 600px;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    li {
+      margin: 0.75rem 0;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      color: #333;
+      font-weight: 500;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      color: #4CAF50;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Projects</h1>
-  <ul>
-    <li><a href="https://a-nelas.github.io/project-flip7/">Flip 7 Calculator</a></li>
-    <li><a href="https://a-nelas.github.io/altitude-calculator/">Altitude Calculator</a></li>
-    <!-- Add more project links here -->
-  </ul>
+  <header>
+    <h1>a-nelas projects</h1>
+  </header>
+
+  <main>
+    <ul>
+      <li><a href="https://a-nelas.github.io/project-flip7/">Flip 7 Calculator</a></li>
+      <li><a href="https://a-nelas.github.io/altitude-calculator/">Altitude Calculator</a></li>
+      <!-- Add more project links below in the same format -->
+      <!-- Example: <li><a href="your-link-here">Project Name</a></li> -->
+    </ul>
+  </main>
 </body>
 </html>
