@@ -76,17 +76,6 @@
       flex: none;
     }
 
-    .eye {
-      margin-left: auto;
-      width: clamp(120px, 24vw, 250px);
-      height: auto;
-      flex: none;
-      color: #c9d3dd;
-      overflow: visible;
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-    }
-
     h1 {
       font-size: clamp(1.5rem, 4vw, 2.15rem);
       margin: 0;
@@ -241,81 +230,6 @@
           <svg viewBox="0 0 100 100" width="30" height="30"><path d="M67.5 34C63.5 52 57.5 66 43.5 66C33.5 66 28.5 58 28.5 50C28.5 41 34.5 34 43.5 34C57.5 34 63.5 50 71.5 66" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h1>a-nelas index</h1>
-      <svg class="eye" id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="134 90 520 324" aria-hidden="true" focusable="false">
-        <defs>
-          <clipPath id="ey-mask">
-            <path id="ey-mask-shape" d="M269 361.907S234 250 303 199s244-23 269 17c0 0-10.603 8.147-32 11-30 4-116.373 52.08-156.7 83.08-40.326 31-59.3 40.734-114.3 51.827z"/>
-          </clipPath>
-          <radialGradient id="ey-lid-grad" cx="399.869" cy="269.935" r="187.47" gradientTransform="matrix(-.8264 .563 -.4742 -.696 858.32 232.634)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#BE7B57"/><stop offset=".455" stop-color="#BC7A56"/><stop offset=".619" stop-color="#B57551"/><stop offset=".736" stop-color="#AA6C48"/><stop offset=".831" stop-color="#99603C"/><stop offset=".912" stop-color="#83512C"/><stop offset=".982" stop-color="#683E19"/><stop offset="1" stop-color="#603813"/>
-          </radialGradient>
-          <radialGradient id="ey-ball-grad" cx="462.063" cy="232.654" r="262.753" gradientTransform="matrix(-.985 .1725 -.0817 -.4666 936.207 261.508)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#FFF"/><stop offset=".27" stop-color="#FCFCFC"/><stop offset=".485" stop-color="#F2F2F2"/><stop offset=".681" stop-color="#E1E1E1"/><stop offset=".865" stop-color="#CACACA"/><stop offset="1" stop-color="#B3B3B3"/>
-          </radialGradient>
-          <radialGradient id="ey-iris-grad" cx="669.775" cy="211.311" r="71.364" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#301550"/><stop offset=".113" stop-color="#371D59"/><stop offset=".299" stop-color="#4B3372"/><stop offset=".534" stop-color="#6B579A"/><stop offset=".642" stop-color="#7C6AAF"/><stop offset=".724" stop-color="#7967AC"/><stop offset=".795" stop-color="#715DA1"/><stop offset=".863" stop-color="#624D8F"/><stop offset=".928" stop-color="#4E3776"/><stop offset=".991" stop-color="#341A55"/><stop offset="1" stop-color="#301550"/>
-          </radialGradient>
-          <radialGradient id="ey-hilite-grad" cx="346.333" cy="233.55" r="17" gradientUnits="userSpaceOnUse">
-            <stop offset=".57" stop-color="#FFF"/><stop offset="1" stop-color="#FFF" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-
-        <path d="M254 361.907S221 259 283 199s242-35 295 6c0 0 13.667 12-15.666 22.667C544.09 234.302 503.666 227 400 308.334c0 0-44.498 32.18-57 36.667-21.306 7.647-60.37 22.168-71.333 29.334-5.085 3.323-5.333 19.334-20 12.667-8.686-3.948 2.333-25.093 2.333-25.093z" opacity=".9" fill="url(#ey-lid-grad)" stroke="currentColor" stroke-width="3" stroke-miterlimit="10"/>
-        <path id="ey-ball" d="M269 361.907S234 250 303 199s244-23 269 17c0 0-10.603 8.147-32 11-30 4-116.373 52.08-156.7 83.08-40.326 31-59.3 40.734-114.3 51.827z" fill="url(#ey-ball-grad)" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
-        <g clip-path="url(#ey-mask)">
-          <g fill="none" stroke="#DD7972" stroke-miterlimit="10" opacity=".75">
-            <path d="M547 198.333c-3.846.823-6.752 2.535-10.667 3.333-4.922 1.004-6.837-.704-11.333-1.333-6.572-.92-18 3.14-23.333 5.333M559.667 220.333c-5.450.992-14.650-.760-18.832-4.486-4.563-4.066-6.910-9.200-13.835-10.180"/>
-            <path d="M542.333 217.667c-2.656-3.457-7.902-6.292-12.666-6-4.228.260-8.550 5.180-11.334 0M546.333 225.667c-14.623-1.495-29.950.118-43.963-6.002-5.672-2.477-11.075-5.920-16.203-9.165-2.842-1.798-5.280-4.230-8.534-5.497-3.574-1.393-7.705-.657-11.300-2.002"/>
-            <path d="M454.333 209.667c8.513-6.118 21.993 3.485 29.817 6.183 9.255 3.192 19.420 8.150 30.183 7.150M475.667 229.667c10.640-3.914 21.495 1.770 30-8M473.667 242.333c3.750-2.337 5.565-4.696 10.002-5.998 4.590-1.348 10.250-1.260 9.997-8.002"/>
-            <path d="M271 357c5.324-7.830 1.867-12.577.667-21.333-.508-3.707-2.553-7.767-2.662-11.302-.145-4.687 3.513-7.595 3.328-12.032M280.333 321c-9.445.858-6.712 12.168-6.667 18.667"/>
-            <path d="M273.667 350.333c1.060-6.708-9.257-12.808-10.700-19.300-1.690-7.594 5.786-15.296 1.366-22.700M277.667 355c8.310-5.408 10.246-18.162 8.697-28.016-.758-4.825-2.947-9.558-1.345-15.283 1.298-4.642 5.117-8.194 5.980-12.700"/>
-            <path d="M279 353c4.378-6.270 11.620-14.996 13.867-22.133 1.726-5.480-1.357-10.113-1.200-15.200.140-4.588 3-8.055 6-11.334M279.667 353c1.620-9.463 13.935-11.050 16.667-19.333M273.667 349c3.958-5.630-.542-13.520 6.667-17.333M291 356.333c2.642-5.022 7.086-7.503 10.146-12.036 3.017-4.470 2.550-11.434 5.187-15.964"/>
-            <path d="M290.333 354.333c3.434-2.430 7.162-4.220 10.166-6.516 2.660-2.033 7.498-4.234 9.833-6.817M281 357c3.847-4.130 9.748-4.363 14-6.667"/>
-          </g>
-          <g id="ey-iris">
-            <circle cx="669.775" cy="215.311" r="69.89" fill="url(#ey-iris-grad)" stroke="#000" stroke-miterlimit="10"/>
-            <circle id="ey-pupil" cx="669.775" cy="215.313" r="25" fill="#130921"/>
-          </g>
-        </g>
-        <path d="M416.062 171.386s-192.395 17.255-75.740 169.947c0 0-72.853 25.167-80.198 20.950-4.080-2.343-62.725-211.950 155.938-190.897z" opacity=".3" fill="#130921"/>
-        <circle id="ey-hilite" cx="346.333" cy="233.55" r="17" fill="url(#ey-hilite-grad)"/>
-
-        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-miterlimit="10">
-          <path d="M239.667 250.333s10-133.333 252.667-156M300.570 185.880s53.097-54.880 163.097-44.214M496.334 145s38 .667 75.666 4.667M530.334 171.400s-120.762-36.130-218.380 5.070M235 295s-4.667 56.667 0 78M239.667 334s-11.753 57 20.457 65M441.667 334s48.667-39 68-61 58.667-34.667 58.667-34.667M289.667 411s7.333-8 24.667-12 44.123-3 101.728-32.500M400 381s44.334-25.334 63.667-50.667M256.333 393c12.573-1.134 13.130-13.618 24-17.333M270.333 390.333c9.133-17.844 33.280-14.397 45.333-27.333M328.333 357c9.100-3.255 17.050-9.520 26.667-13.334 6.166-.777 16.020-7.640 20-12M555.667 237.667C565.930 233.674 575.170 229.897 585 225"/>
-          <path d="M332.333 168.333c5.960-3.490 14.100-5.857 20.670-8.665 7.880-3.370 16.904-5.110 25.330-6.670M579.667 151.667c5.060-1.420 10.310-1.333 16-1.333M595 153.500h19M613 157c6.890 0 19.326 1.120 24-4M637 157.667c4.240-2.166 9.630-.782 13.333-3.333"/>
-        </g>
-
-        <g class="lashes" fill="currentColor" stroke="#0e1116" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-          <path transform="translate(251.667 337.0) scale(0.6) translate(-251.667 -337.0)" d="M251.667 337S236.333 325 215 359c0 0-9.333 19.333-32 14 0 0 16.284 10.920 36-11.093 0 0 13.284-21.446 29.850-19.407 7.505.924 2.817-5.500 2.817-5.500z"/>
-          <path transform="translate(251.162 302.714) scale(0.6) translate(-251.162 -302.714)" d="M251.162 302.714s-11.495-12.714-45.707 27.620c0 0-14.553 23.250-51.455 13.166 0 0 29 23 55.500-5.500 0 0 20-26.500 37.860-27.875 10.174-.783 3.802-7.410 3.802-7.410z"/>
-          <path transform="translate(248.85 262.0) scale(0.6) translate(-248.85 -262.0)" d="M248.850 262s-6.516 0-11.275 8c-2.304 3.873-31.075 61.500-98.075 47 0 0 56.650 20 98.075-35.500 0 0 9.652-10.500 15.540-8.500-.002 0 7.083-9.500-4.266-11z"/>
-          <path transform="translate(260.124 233.0) scale(0.6) translate(-260.124 -233.0)" d="M260.124 233s-16.418-.083-42.067 17.333c0 0-54.390 38-103.723 19.333 0 0 34 31.146 111.333-15.754 0 0 13.017-7.468 34.457-9.580 13.543-1.332 5.190-12.485 0-11.332z"/>
-          <path transform="translate(281.0 207.0) scale(0.6) translate(-281.0 -207.0)" d="M281 207s-9.920 1.046-16.667 4.368c0 0-24.896 11.780-46.277 21.550-14.490 6.620-40.390 19.416-85.723 5.416 0 0 36.056 27 85.723 3.333 0 0 21.610-10.960 45.412-20.667 0 0 29.532-9.632 17.532-14z"/>
-          <path transform="translate(352.864 172.333) scale(0.6) translate(-352.864 -172.333)" d="M352.864 172.333S331 165.607 301.667 188c-26.113 19.935-69.333 7.458-78-7.438 0 0 26 41.225 73.333 18.498s46.394-17.394 55.864-20.060 0-6.667 0-6.667z"/>
-          <path transform="translate(388.327 166.607) scale(0.6) translate(-388.327 -166.607)" d="M388.327 166.607s-84.250 66.250-109.993-3.356c0 0 22.236 81.750 116 8.136 0 0 6.675-14.504-6.007-4.780z"/>
-          <path transform="translate(437.0 166.607) scale(0.6) translate(-437.0 -166.607)" d="M437 166.607s-7.047-7.060-15.856 0-26.810 49.764-75.477 16.078c0 0 28.667 40.593 78.667-3.213 0 0 4.333-7.700 7.500-8.086s12.113-1.680 5.167-4.780z"/>
-          <path transform="translate(459.667 171.386) scale(0.6) translate(-459.667 -171.386)" d="M459.667 171.386s4 35.650 41.334 11.300c0 0-32.666 16.322-32.666-10.353 0-13.840-16-6.785-14.667-5.726s-8 6.500 6 4.780z"/>
-          <path transform="translate(488.334 171.386) scale(0.6) translate(-488.334 -171.386)" d="M488.334 171.386s16-7.320 20 6.147 38 2.935 44-8.133c0 0-24.336 34.585-47.334 13.285 0 0-5.333-8.748-12.666-6.217s-5.505 3.700-4-5.082z"/>
-          <path transform="translate(523.667 179.51) scale(0.6) translate(-523.667 -179.51)" d="M523.667 179.510s8.667-2.083 16.667 6.370 27.332-7.943 31.666-9.412 13.667-12.254 32.334-9.860c0 0-12.984-.767-36 19.272-16 13.930-31.033 9.054-34.167 5.315 0 0-6.500-6.247-10.500-2.555s-10.667-5.955 0-9.130z"/>
-          <path transform="translate(549.0 191.196) scale(0.6) translate(-549.0 -191.196)" d="M549 191.196s5.333 5.470 14.667 3.970 20.667-5.765 40.667-17.632 30-8.133 30-8.133-14.333 2.694-29 12.314-21.667 18.098-37 20.406c-8.052 1.212-21.334 2.330-24.667-6.954s5.334-3.970 5.334-3.970z"/>
-          <path transform="translate(568.334 199.812) scale(0.6) translate(-568.334 -199.812)" d="M568.334 199.812s26.667 13.855 66-23.343c0 0-26.666 41.864-69.333 30.530 0 0-4-3.043 3.334-7.188z"/>
-          <path transform="translate(574.97 208.747) scale(0.6) translate(-574.97 -208.747)" d="M574.970 208.747S595 223.504 619 202.920c0 0-20.667 24.080-47 14.747 0 0-5.010-2.493 2.970-8.920z"/>
-          <path transform="translate(273.0 366.5) scale(0.8) translate(-273.0 -366.5)" d="M273 366.500s-67.333-21.333-98 22.250c0 0 25.580-31.084 85.123-18.417 0 0 14.614 9.334 23.746-1.333L273 366.500z"/>
-          <path transform="translate(278.334 366.5) scale(0.8) translate(-278.334 -366.5)" d="M278.334 366.500s-36.057-32.740-66.667-23.500c0 0-7.532 1.660-20.766 7.497S157 346 154 343.500s9.470 16.688 36.900 10.428 35.758-9.930 76.568 19.072c9.178 6.522 8.200-2.333 10.866-6.500z"/>
-          <path transform="translate(278.334 366.5) scale(0.8) translate(-278.334 -366.5)" d="M278.334 366.500s-34.875-48.167-124.770-49.500c0 0 71.040 2 113.904 53.333 0 0 7.532 9.667 10.866-3.833z"/>
-          <path transform="translate(294.334 358.34) scale(0.8) translate(-294.334 -358.34)" d="M294.334 358.340s-20 2.680-36.667-12.997S218.333 307 183 295s-48.667-2.158-64-3.746-20.667-5.087-20.667-5.087S107 293 121 295s20-.500 26 0 48.834-2.787 92.667 46.356 54.667 25.144 54.667 25.144 6.334-2.820 0-8.160z"/>
-          <path transform="translate(311.953 349.0) scale(0.8) translate(-311.953 -349.0)" d="M311.953 349s-5.313 3.500-11.383 0-10.070-3.500-19.570-11-40.194-29.197-43.425-31.500-47.245-41.017-119.410-35.508c0 0-9.165 3.508-13.165-3.492 0 0 .828 5.610 15.855 6.300s58.423 2.746 97.202 27.013c0 0 62.277 45.724 71.610 51.456S310 363.830 315.500 355.665 311.953 349 311.953 349z"/>
-          <path transform="translate(345.5 334.945) scale(0.8) translate(-345.5 -334.945)" d="M345.500 334.945S335.417 342 321.417 334s-66.120-86.500-127.458-88c0 0-30.312 3.500-61.646-9.500 0 0 20.185 17.095 50.687 17 0 0 52-10.500 106.580 63.500 33.766 45.782 55.920 28.343 55.920 28.343s3.168.325 1.834-6.010-1.834-4.388-1.834-4.388z"/>
-          <path transform="translate(377.5 313.6) scale(0.8) translate(-377.5 -313.6)" d="M377.500 313.600s-10.178 7.900-29.840-4.600-60.790-52.640-60.790-52.640-46.883-53.440-121.870-27.167c0 0 56.096-11.193 90.298 12.807 0 0 12.170 5 37.702 33 25.798 28.293 52.997 51.540 82 51.540 7.118 0 2.500-12.940 2.500-12.940z"/>
-          <path transform="translate(402.0 295.0) scale(0.8) translate(-402.0 -295.0)" d="M402 295s-28.318-12.354-47.160-33c-21.595-23.667-27.485-30.663-27.485-30.663C315.355 216.920 271.500 183 201 197.500c0 0 66.836-4.006 104.500 26.500 5.123 4.150 42.160 45.500 42.160 45.500S378.278 305.690 402 307c7.552.417 0-12 0-12z"/>
-          <path transform="translate(426.5 277.0) scale(0.8) translate(-426.5 -277.0)" d="M426.500 277s-8.820 12-30.410-9.500-54.790-79.296-112.220-76.304c0 0 44.335-.047 95.103 65.164 37.090 47.640 50.527 29.807 50.527 29.807s1-7.167-3-9.167z"/>
-          <path transform="translate(451.843 262.0) scale(0.8) translate(-451.843 -262.0)" d="M451.843 262S438.500 263.667 426 238.333s-30.263-41.898-57.397-44.364-22.936-11.285-22.936-11.285-4.860 15.182 25.736 16.248S418.500 240.520 418.500 240.260s11.686 33.710 33.343 33.975c4.102-9.533 0-12.235 0-12.235z"/>
-          <path transform="translate(459.5 259.5) scale(0.8) translate(-459.5 -259.5)" d="M459.500 259.500s2.834 2.270 5.167-7.115-15.463-68.672 43.833-62.744c0 0-43.500-5.473-36.500 61.693 0 0 0 16.667-12.500 8.167z"/>
-          <path transform="translate(483.0 244.0) scale(0.8) translate(-483.0 -244.0)" d="M483 244s3.500 2.020 6.500-3.740 17.987-55.280 62.834-63.790c0 0-39.710 8.756-52.333 58.864 0 0-7.666 25.582-19 9.010"/>
-          <path transform="translate(522.0 229.193) scale(0.8) translate(-522.0 -229.193)" d="M522 229.193s2.668 3.727 8.334-.733 23.463-60.176 71.064-61.568c0 0-30.950-.630-62.898 57.678 0 0-5.500 14.930-16.500 11.930 0 0-5-3.114 0-7.307z"/>
-          <path transform="translate(549.5 224.57) scale(0.8) translate(-549.5 -224.57)" d="M549.500 224.570s5.176 1.062 11.088-4.754 51.580-52.514 73.746-50.415c0 0-20.938-4.400-63.886 48.600 0 0-19.835 22.887-20.948 6.570z"/>
-        </g>
-      </svg>
       </div>
 
       <div class="tools" role="search">
@@ -581,101 +495,6 @@
   </footer>
 
   <script>
-    // The eye: wakes up on load, then follows the pointer and blinks now and then
-    (function () {
-      const svg = document.getElementById('eye');
-      const iris = document.getElementById('ey-iris');
-      const pupil = document.getElementById('ey-pupil');
-      const ball = document.getElementById('ey-ball');
-      const mask = document.getElementById('ey-mask-shape');
-      const hilite = document.getElementById('ey-hilite');
-
-      const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
-      const win = (t, a, b) => clamp((t - a) / (b - a));
-      const lerp = (a, b, x) => a + (b - a) * x;
-      const out = (x) => 1 - (1 - x) * (1 - x);
-      const inOut = (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
-
-      const IRIS = [669.775, 215.311];   // where the iris is drawn (rolled back, out of sight)
-      const CENTER = [432, 252];         // the middle of the eye opening
-      const LID = { x: 420, y: 289, angle: -25.7 }; // lower lid line: the eye closes onto it
-
-      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-      let start = null, last = 0;
-      let pointer = null;                 // client coords, or null to look straight ahead
-      let pos = [IRIS[0] - CENTER[0], IRIS[1] - CENTER[1]]; // iris offset from CENTER
-      let nextBlink = 4 + Math.random() * 3, blinkAt = -1;
-
-      const tf = (el, x, y, sx, sy, ox, oy) =>
-        el.setAttribute('transform', `translate(${(x + ox).toFixed(2)} ${(y + oy).toFixed(2)}) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(${-ox} ${-oy})`);
-      const lid = (open) => {
-        const t = `translate(${LID.x} ${LID.y}) rotate(${LID.angle}) scale(1 ${open.toFixed(3)}) rotate(${-LID.angle}) translate(${-LID.x} ${-LID.y})`;
-        ball.setAttribute('transform', t);
-        mask.setAttribute('transform', t);
-        hilite.style.opacity = clamp((open - 0.4) / 0.6);
-      };
-
-      // where the iris wants to be, as an offset from CENTER
-      function target() {
-        if (!pointer) return [0, 0];
-        const r = svg.getBoundingClientRect();
-        const ctm = svg.getScreenCTM();
-        if (!ctm || !r.width) return [0, 0];
-        const ex = ctm.a * CENTER[0] + ctm.e, ey = ctm.d * CENTER[1] + ctm.f;
-        const vx = pointer[0] - ex, vy = pointer[1] - ey;
-        const d = Math.hypot(vx, vy) || 1;
-        const k = d / (d + 220);          // far away: full turn; close: small
-        const x = (vx / d) * k * 125;
-        const y = (vy / d) * k * 26 - x * 0.2; // the opening slants: left is lower
-        return [x, y];
-      }
-
-      function frame(now) {
-        if (start === null) start = last = now;
-        const t = (now - start) / 1000, dt = Math.min(0.05, (now - last) / 1000);
-        last = now;
-
-        // ---- wake up: closed, a drowsy half-open, a droop, then wide open ----
-        let open = 1;
-        if (!reduce) {
-          if (t < 0.5) open = 0.04;
-          else if (t < 0.9) open = lerp(0.04, 0.45, out(win(t, 0.5, 0.9)));
-          else if (t < 1.15) open = lerp(0.45, 0.2, inOut(win(t, 0.9, 1.15)));
-          else open = lerp(0.2, 1, out(win(t, 1.15, 1.7)));
-          // blinks once awake
-          if (t > nextBlink && blinkAt < 0) blinkAt = t;
-          if (blinkAt >= 0) {
-            const b = (t - blinkAt) / 0.22;
-            if (b >= 1) { blinkAt = -1; nextBlink = t + 3 + Math.random() * 5; }
-            else open = Math.min(open, b < 0.45 ? lerp(1, 0.04, b / 0.45) : lerp(0.04, 1, (b - 0.45) / 0.55));
-          }
-        }
-        lid(open);
-
-        // ---- iris: rolls in from the corner, then follows the pointer ----
-        const awake = reduce ? 1 : win(t, 1.0, 2.2);
-        const [gx, gy] = target();
-        const follow = 1 - Math.exp(-dt * lerp(2.5, 9, awake));
-        pos = [lerp(pos[0], gx, follow), lerp(pos[1], gy, follow)];
-        const grow = reduce ? 1 : lerp(0.6, 1, inOut(win(t, 0.9, 2.0)));
-        const squash = 1 - 0.28 * clamp(Math.abs(pos[0]) / 125); // turned away: seen edge-on
-        tf(iris, CENTER[0] + pos[0] - IRIS[0], CENTER[1] + pos[1] - IRIS[1], grow * squash, grow, IRIS[0], IRIS[1]);
-
-        // ---- pupil: wide and sleepy, tightens as it wakes ----
-        const ps = reduce ? 0.7 : lerp(1.15, 0.7, inOut(win(t, 1.2, 2.4)));
-        tf(pupil, 0, 0, ps, ps, IRIS[0], IRIS[1]);
-
-        requestAnimationFrame(frame);
-      }
-
-      addEventListener('pointermove', (e) => { pointer = [e.clientX, e.clientY]; }, { passive: true });
-      addEventListener('pointerdown', (e) => { pointer = [e.clientX, e.clientY]; }, { passive: true });
-      document.documentElement.addEventListener('pointerleave', () => { pointer = null; });
-      svg.addEventListener('click', () => { if (!reduce && blinkAt < 0) blinkAt = (performance.now() - start) / 1000; });
-
-      requestAnimationFrame(frame);
-    })();
-
     // Quick filter (press / to focus)
     (function () {
       const input = document.getElementById('filter');
