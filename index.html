@@ -515,6 +515,13 @@
 
       input.addEventListener('input', filter);
       document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          input.value = '';
+          filter();
+          input.blur();
+          return;
+        }
         if (document.activeElement === input || e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
         if (e.key === '/') {
           e.preventDefault();
