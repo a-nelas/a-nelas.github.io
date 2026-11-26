@@ -226,7 +226,9 @@
   <header>
     <div class="container">
       <div class="brand">
-        <div class="logo" aria-hidden="true">α</div>
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="30" height="30"><path d="M67.5 34C63.5 52 57.5 66 43.5 66C33.5 66 28.5 58 28.5 50C28.5 41 34.5 34 43.5 34C57.5 34 63.5 50 71.5 66" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h1>a-nelas index</h1>
       </div>
 
@@ -513,8 +515,14 @@
 
       input.addEventListener('input', filter);
       document.addEventListener('keydown', (e) => {
-        if (e.key === '/' && document.activeElement !== input) {
+        if (document.activeElement === input || e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+        if (e.key === '/') {
           e.preventDefault();
+          input.focus();
+        } else if (e.key.length === 1 && e.key !== ' ') {
+          // Any printable key: focus the search and let the character land in it
+          input.focus();
+        } else if (e.key === 'Backspace' && input.value) {
           input.focus();
         }
       });
